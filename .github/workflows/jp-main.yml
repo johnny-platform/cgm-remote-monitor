@@ -1,4 +1,4 @@
-name: CI test and publish to Githhub
+name: CI test and publish to Github
 
 on:
   workflow_dispatch: 
