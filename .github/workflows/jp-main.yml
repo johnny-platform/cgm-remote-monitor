@@ -33,7 +33,9 @@ jobs:
       - name: Send Coverage
         run: npm run-script coverage
   build-and-push-image:
+    name: Build and Publish artifact
     runs-on: ubuntu-latest
+    needs: test
     env:
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
